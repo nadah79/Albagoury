@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+/* Main Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+html ,body{
+    font-family: 'Cairo', sans-serif;
+
+  }
+
+  .primary-text {
+    color: #D07E01;
+  }
+  
+  .bg-primary{
+    background-color: #FFF8DB;
+  }
+  
+  .bg-green{
+    background-color: #005419;
+  }
+  
+  .bg-dark {
+    background-color: #222222;
+    opacity: 95%;
+    color: #FFF8DB;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+
+ a{
+    text-decoration: none;
+    color: #fff;
+  }
+ 
+
+
+  /* navbar */
+  #navbar{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 1rem ;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+  #navbar .logo img {
+    display: block;
+    width: 150%;
+  
+  }
+
+  #navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+
+  }
+  #navbar ul li a {
+    padding: 0 1rem ;
+
+  }
+  
+  #navbar ul li a:hover {
+    background-color: #D07E01;
+    color: #fff;
+    border-radius: 5px;
+  } 
+  #background-img{
+    background: url(../imgages/background.png) no-repeat center center/cover;
+    height: 100vh;
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 0;
+  height: 300px;
+
+}
+
+ul{
+  list-style: none;
+
+}
+
+.logobox a{
+  font-size: 22px;
+  padding: 0 10px ;
+
+}
+
+#Copyright{
+  height: 150px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#Copyright a{
+  text-decoration:underline ;
+}
