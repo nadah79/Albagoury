@@ -131,25 +131,7 @@ nav ul li a:hover {
 
 
 /* background img */
-/* .background-img {
-  background: url(../imgages/background.png) no-repeat center center/cover;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  align-items:end;
-  position: relative; 
-   z-index: -1;
-  padding: 11rem ;
-  bottom:  100px;
 
-}
-
-.background-img h1{
-  color: var(--orange);
-  font-size: 8rem;
-  line-height: 103.5%;
-
-} */
 
 .background h1{
   color: var(--orange);
@@ -474,6 +456,7 @@ footer div {
   }
   .logo img {
     width: 100%;
+
   }
 /* background img */
 .background-img {
