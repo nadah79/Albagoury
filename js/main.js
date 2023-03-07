@@ -1,3 +1,5 @@
+
+// nav
 let hamburger=document.querySelector(".hamburger");
 let navMenu =document.querySelector(".nav-menu");
 
@@ -30,12 +32,14 @@ function showSlides() {
 // news slider
 
 let newslideIndex = 0;
-showNewsSlides();
+showNewsSlides(1);
 
-function showNewsSlides() {
+function showNewsSlides(n) {
   let i;
   let newsSlides = document.getElementsByClassName("news-slides");
   let dots = document.getElementsByClassName("dot");
+  if (n > newsSlides.length) {newslideIndex = 1}  ;
+  if (n < 1) {newslideIndex = newsSlides.length};
   for (i = 0; i < newsSlides.length; i++) {
     newsSlides[i].style.display = "none";  
   }
@@ -46,6 +50,8 @@ function showNewsSlides() {
   }
   newsSlides[newslideIndex-1].style.display = "block";  
   dots[newslideIndex-1].className += " active";
-  setTimeout(showNewsSlides, 2000); // Change image every 2 seconds
+  setTimeout(showNewsSlides, 2000,n); // Change image every 2 seconds
 }
-
+function currentSlide(n) {
+  showNewsSlides(slideIndex = n);
+}

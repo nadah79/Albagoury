@@ -40,8 +40,8 @@ ul {
   list-style: none;
 }
 .container {
-  width: 90%;
-  margin: auto;
+  width: 80%;
+  margin: 0 auto;
 }
 .bg-primary{
     background-color: var(--white);
@@ -73,7 +73,6 @@ nav {
   /* width: 90%; */
   align-items: center;
   padding: 0 2rem;
-  min-height: 60px;
 }
 .background{
   position: relative;    
@@ -98,8 +97,7 @@ nav {
   width: 150%;
 }
 footer .logo img{
-  width: 50%;
-
+  width: 100%;
 }
 
 nav ul {
@@ -123,8 +121,8 @@ nav ul li a:hover {
   display: none;
   cursor: pointer;
   border: 0;
-  font-size: 2rem;
-  padding: 1.2rem;
+  font-size: 1rem;
+  padding: 1rem;
   color: #fff8db;
   background-color: var(--orange);
 }
@@ -146,16 +144,16 @@ nav ul li a:hover {
 .experience .experience-cards{
 display: flex;
 flex-direction: row;
-justify-content: center;
+justify-content: space-between;
 flex-wrap: wrap;
+width: 100%;
 }
 
 .experience .experience-card{
   background-color: var(--green);
-  margin: 2rem;
-  padding: 2rem 0;
-  justify-content: space-around;
-  width: calc((85%)/ 3);
+  margin-bottom: 2rem;
+  /* padding: 2rem 0; */
+  width: calc((100% /3) - 2rem);
   color: var(--white);
   line-height: 140%;
   font-size: 1.6rem;
@@ -231,7 +229,8 @@ flex-wrap: wrap;
     width: 100%;
     justify-content: center;
     padding: 5rem;
-    margin-top: 4rem;
+    /* height: 200px; */
+    align-items: center;
     background-color:var(--orange);
 
   }
@@ -324,12 +323,13 @@ justify-content: space-evenly;
 
 .btn{
   background-color:var(--orange);
-  padding: 1rem 1.2rem;
   cursor: pointer;
   color:var(--white);
   border: none;
   width: 16rem;
   font-size: 2rem;
+  padding: 1rem 1.2rem;
+
 }
 .btn-submit{
   display: flex;
@@ -375,18 +375,24 @@ justify-content: space-evenly;
 /* footer */
 .footer {
   display: flex;
+  /* justify-content: space-around; */
   align-items: center;
   padding: 1.2rem 0;
   width: 100%;
   background-color: var(--green);
 }
+
 .footer-right,.footer-left   {
-  width: 50%;
-  
+  width: 50%;  
+}
+.footer-left   {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sociallogos {
-  width: 50%;
+  /* width: 50%; */
 }
 .sociallogos a {
   font-size: 2rem;
@@ -419,98 +425,4 @@ footer div {
 }
 #Copyright a {
   text-decoration: underline;
-}
-
-@media (max-width: 700px) {
-  h2{
-    font-size: 2rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-  .nav-menu {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-  }
-  nav {
-    width: 100%;
-    padding: 0;
-    background-color: var(--white);
-  }
-
-  .hamburger {
-    display: block;
-  }
-  .hamburger:focus {
-    outline: none;
-  }
-
-  .nav-menu.show {
-    display: flex;
-  }
-
-  .nav-menu li {
-    padding: 1rem;
-  }
-  .logo img {
-    width: 100%;
-
-  }
-/* background img */
-.background-img {
-  padding: 1rem ;
-}
-
-
-.background h1{
-  color: var(--orange);
-  font-size: 3rem;
-  line-height: 103.5%;
-}
-
-.background .btn{
-  width: 8rem;
-}
-
-
-
-  /*  */
-.rectangle-section .content,.rectangle-section-img,.news .rectangle-section .content {
-    width: 100%;
-  }
-  .right-rectangle .content{
-    margin-right: 0;
-    padding-bottom: 4rem;
-  }
-  .left-rectangle .content{
-    margin-left: 0;
-    padding-top: 4rem;
-
-
-  }
- 
-
-.experience .experience-card{
-  width: calc((100%)/2);
-
-}
-
-/* contact */
-.map ,.info{
-  width: 100%;
-  font-size: 1.2rem;
-}
-
-.info i{
-font-size: 3rem;
-}
-.info #mobile,.info #address{
- height: 200px;
-}
-
-
-
-
 }

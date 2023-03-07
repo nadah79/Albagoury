@@ -1,0 +1,162 @@
+
+@media (max-width: 992px) {
+    h2 {
+        font-size: 2.5rem;
+      }
+    
+      p {
+        font-size: 1.5rem;
+      }
+    /* nav */
+    .logo img {
+        width: 100%;
+      }
+      nav ul li a {
+        padding: 0 1.4rem;
+        font-size: 1.2rem;
+      }
+          
+    .experience .experience-card {
+        width: calc((100% /2) - 2rem);
+    }
+    
+  .background h1 {
+    color: var(--orange);
+    font-size: 4rem;
+    line-height: 105%;
+  }
+
+  .background .btn {
+    width: 8rem;
+    font-size: 2rem;
+    padding: 1.2rem ;
+  }
+    /* contact */
+    .map,
+    .info {
+      width: 100%;
+      font-size: 1.2rem;
+    }
+  
+    .info i {
+      font-size: 3rem;
+    }
+    .info #mobile,
+    .info #address {
+      height: 200px;
+    }
+ 
+
+}
+
+
+/* 
+  @media (max-width: 768px) {
+}
+  */
+
+
+/* mobile */
+@media (max-width: 767px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 50%;
+    background-color: var(--white);
+    height: 100vh;
+  }
+  nav {
+    width: 100%;
+    padding: 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+  .hamburger:focus {
+    outline: none;
+  }
+
+  .nav-menu.show {
+    display: flex;
+  }
+
+  .nav-menu li {
+    padding: 1rem;
+  }
+  .logo img {
+    width: 100%;
+  }
+  /* background img */
+  .background-img {
+    padding: 1rem;
+  }
+
+  .background h1 {
+    color: var(--orange);
+    font-size: 2rem;
+    line-height: 100%;
+  }
+
+  .background .btn {
+    width: 5rem;
+    font-size: 1rem;
+    padding: 1rem ;
+  }
+
+  /*  */
+  .rectangle-section .content,
+  .rectangle-section-img,
+  .news .rectangle-section .content {
+    width: 100%;
+  }
+  .right-rectangle .content {
+    margin-right: 0;
+    padding-bottom: 4rem;
+  }
+  .left-rectangle .content {
+    margin-left: 0;
+    padding-top: 4rem;
+  }
+  .experience .experience-cards{
+    justify-content: center;
+  }
+  .experience .experience-card {
+    width: calc(100% - 2rem);
+}
+
+  /* contact */
+  .map,
+  .info {
+    width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .info i {
+    font-size: 3rem;
+  }
+  .info #mobile,
+  .info #address {
+    height: 200px;
+  }
+
+  .contact .contact-us .form-group {
+    display: block;
+  }
+  
+}
+
+
+  /* @media (min-width: 1200px) {    
+    .experience .experience-card {
+  }
+  }
+
+ */
