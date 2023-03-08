@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mobile.css">
-    <title>الباجوري-الصفحة</title>
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <title>الباجوري-الصفحة الرئيسية</title>
   </head>
   <body id="home">
-
-<!-- 
+    <!-- 
     <section class="background-img" class="text-center">
       <header>
         <nav id="navbar">
@@ -38,26 +37,29 @@
             <button class="btn">إستشيرنا</button>
             </a>
     </section> -->
+    <header>
+      <nav id="navbar">
+        <button class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="logo">
+          <a href="index.html" onclick="{clickHandle}"
+            ><img src="./imgages/logo.svg" alt="logo"
+          /></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li><a class="nav-link" href="about.html">عنا</a></li>
+          <li><a class="nav-link" href="lawyers.html">محامونا</a></li>
+          <li><a class="nav-link" href="news.html">الأخبار</a></li>
+          <li><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+    </header>
 
     <section class="background">
-      <img src="./imgages/background.png" alt="">
-      <header>
-        <nav id="navbar">
-          <button class="hamburger">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <div class="logo">
-            <a href="index.html"><img src="./imgages/logo.svg" alt="logo" /></a>
-          </div>
-          <ul class="nav-menu">
-            <li><a class="nav-link" href="index.html">الرئيسية</a></li>
-            <li><a class="nav-link" href="about.html">عنا</a></li>
-            <li><a class="nav-link" href="lawyers.html">محامونا</a></li>
-            <li><a class="nav-link" href="news.html">الأخبار</a></li>
-            <li><a class="nav-link" href="contact.html">تواصل معنا</a></li>
-          </ul>
-        </nav>
-      </header>
+      <img src="./imgages/background.png" alt="" />
+
       <div class="absolute">
         <h1>
           التميز <br />
@@ -65,16 +67,18 @@
         </h1>
         <a href="#">
           <button class="btn">إستشيرنا</button>
-          </a>
+        </a>
       </div>
     </section>
 
-    <section class="bg-primary py">
+    <section class="bg-primary py-5">
       <div class="container">
         <div class="rectangle-section left-rectangle">
           <div class="content">
             <h2>نقدم لك جميع الخدمات والاستشارات القانونية</h2>
-            <p>إذا كنت بحاجة إلى محام ، فيمكننا مساعدتك. لقد ساعدنا مئات الأشخاص في الماضي ، وسنفعل الشيء نفسه من أجلك.
+            <p>
+              إذا كنت بحاجة إلى محام ، فيمكننا مساعدتك. لقد ساعدنا مئات الأشخاص
+              في الماضي ، وسنفعل الشيء نفسه من أجلك.
             </p>
           </div>
           <div class="rectangle-section-img">
@@ -87,10 +91,10 @@
     </section>
 
     <!--experience  -->
-    <section class="experience bg-primary text-center py">
+    <section class="experience bg-primary text-center">
       <div class="container">
         <h2 class="text-center">خبراتنا</h2>
-        <div class="experience-cards py">
+        <div class="experience-cards py-5">
           <div class="experience-card">
             <div>
               <img src="./imgages/civil.svg" alt="" />
@@ -131,7 +135,7 @@
       </div>
     </section>
 
-    <section class="bg-primary py">
+    <section class="bg-primary py-5">
       <div class="container">
         <div class="rectangle-section right-rectangle">
           <div class="rectangle-section-img">
@@ -151,84 +155,121 @@
         </div>
       </div>
     </section>
-<!-- slider -->
-    <section class="bg-primary py">
-        <h2 class="text-center py">شركاء النجاح</h2>
-        <div class="slider">
-          <div class="slides">
-            <img  src="./imgages/logo-light.png" alt=""  height="100px" width="300px">
-          </div>
-        </div>        
+    <!-- slider -->
+    <section class="bg-primary">
+      <h2 class="text-center py-5">شركاء النجاح</h2>
+      <div class="slider">
         <div class="slides">
-          <img src="./imgages/civil.jpg" alt="" height="100px" width="300px">
+          <img
+            src="./imgages/logo-light.png"
+            alt=""
+            height="100px"
+            width="300px"
+          />
         </div>
-      </div>       
-  </div>    
+      </div>
+      <div class="slides">
+        <img src="./imgages/civil.jpg" alt="" height="100px" width="300px" />
+      </div>
     </section>
 
-    <section class="news bg-primary py">
+    <section class="news bg-primary py-5">
       <h2 class="text-center">أخر أخبار المؤسسة</h2>
-      <div class="slider container py">
-            <div class="news-slides">
-              <div class="rectangle-section left-rectangle">
-                <div class="content">
-                  <h2>محكمة النقض</h2>
-                  <p>مؤسسة الباجوري للمحاماة أُسست عام 1920 على يد الدكتور حسنين الباجوري وأستمر عملها القانوني حتى الأن, في هذه الفترة عملت المؤسسة على العديد من القضايا والأمور القانونية مع العديد من الشركاء كان نتيجتها ثقة الموكلين في هذه المؤسسة العريقة.</p>
-                  <div class="py">
-                    <a href="#">
-                    <button class="btn">إقرأ المزيد...</button>
-                    </a>
-                  </div>
-                </div>
-                <div class="rectangle-section-img">
-                  <div class="green-rectangle">
-                    <img src="./imgages/صور-محكمة-النقص- 1.svg" alt="" />
-                  </div>
-                </div>
+      <div class="slider container py-5">
+        <div class="news-slides">
+          <div class="rectangle-section left-rectangle">
+            <div class="content">
+              <h2>محكمة النقض</h2>
+              <p>
+                مؤسسة الباجوري للمحاماة أُسست عام 1920 على يد الدكتور حسنين
+                الباجوري وأستمر عملها القانوني حتى الأن, في هذه الفترة عملت
+                المؤسسة على العديد من القضايا والأمور القانونية مع العديد من
+                الشركاء كان نتيجتها ثقة الموكلين في هذه المؤسسة العريقة.
+              </p>
+              <div class="py-5">
+                <a href="#">
+                  <button class="btn">إقرأ المزيد...</button>
+                </a>
               </div>
             </div>
-            <div class="news-slides">
-              <div class="rectangle-section left-rectangle">
-                <div class="content">
-                  <h2>محكمة النقض</h2>
-                  <p>مؤسسة الباجوري للمحاماة أُسست عام 1920 على يد الدكتور حسنين الباجوري وأستمر عملها القانوني حتى الأن, في هذه الفترة عملت المؤسسة على العديد من القضايا والأمور القانونية مع العديد من الشركاء كان نتيجتها ثقة الموكلين في هذه المؤسسة العريقة.</p>
-                  <div class="py">
-                    <a href="#">
-                      <button class="btn">إقرأ المزيد...</button>
-                    </a>
-                  </div>
-                </div>
-                <div class="rectangle-section-img">
-                  <div class="green-rectangle">
-                    <img src="./imgages/066 1.svg" alt="" />
-                  </div>
-                </div>
+            <div class="rectangle-section-img">
+              <div class="green-rectangle">
+                <img src="./imgages/صور-محكمة-النقص- 1.svg" alt="" />
               </div>
             </div>
-            
+          </div>
+        </div>
+        <div class="news-slides">
+          <div class="rectangle-section left-rectangle">
+            <div class="content">
+              <h2>محكمة النقض</h2>
+              <p>
+                مؤسسة الباجوري للمحاماة أُسست عام 1920 على يد الدكتور حسنين
+                الباجوري وأستمر عملها القانوني حتى الأن, في هذه الفترة عملت
+                المؤسسة على العديد من القضايا والأمور القانونية مع العديد من
+                الشركاء كان نتيجتها ثقة الموكلين في هذه المؤسسة العريقة.
+              </p>
+              <div class="py-5">
+                <a href="#">
+                  <button class="btn">إقرأ المزيد...</button>
+                </a>
+              </div>
+            </div>
+            <div class="rectangle-section-img">
+              <div class="green-rectangle">
+                <img src="./imgages/066 1.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="text-center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <!-- <span class="dot" onclick="currentSlide(3)"></span> 
         <span class="dot" onclick="currentSlide(4)"></span> 
-        <span class="dot" onclick="currentSlide(5)"></span> 
+        <span class="dot" onclick="currentSlide(5)"></span>  -->
       </div>
     </section>
+
+    <!-- top btn -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top ">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
 
     <footer>
       <section class="footer">
-        <div class="footer-right">
-          <ul class="components">
-            <li><a href="#">المؤسسة</a></li>
-            <li><a href="#">الرئيسية</a></li>
-            <li><a href="#">محامونا</a></li>
-            <li><a href="#">عنا</a></li>
-            <li><a href="#">الأخبار</a></li>
-            <li><a href="#">تواصل معنا</a></li>
-          </ul>
+        <div class="footer-right components">
+            <div class="w-50">
+              <ul>
+                <li class="bold">المؤسسة</li>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="lawyers.html">محامونا</a></li>
+              </ul>
+            </div>
+            <div class="w-50">
+              <ul>
+                <li><a href="about.html">عنا</a></li>
+                <li><a href="news.html">الأخبار</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+              </ul>
+            </div>
         </div>
         <div class="footer-left text-center">
+          <div class="logo">
+            <a href="#home"><img src="./imgages/logo.svg" alt="logo" /></a>
+          </div>
+          <div class="sociallogos text-center">
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- <section class="footer">
+        <div class="col-4">
           <div class="logo">
             <a href="#home"><img src="./imgages/logo.svg" alt="logo" /></a>
           </div>
@@ -238,7 +279,8 @@
             <a href="#"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
-      </section>
+
+      </section> -->
       <section id="Copyright" class="text-center">
         <p>&copy; All Rights Reserved, ALBAGORY ORGANIZATION</p>
         <p>

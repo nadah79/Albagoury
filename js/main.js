@@ -1,4 +1,3 @@
-
 // nav
 let hamburger=document.querySelector(".hamburger");
 let navMenu =document.querySelector(".nav-menu");
@@ -27,12 +26,13 @@ function showSlides() {
   slideIndex++;
   if (slideIndex > slides.length) {slideIndex = 1}    
   slides[slideIndex-1].style.display = "flex";  
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 2000); // Change  every 2 seconds
 }
-// news slider
 
-let newslideIndex = 0;
-showNewsSlides(1);
+
+// news slider
+let newslideIndex = 1;
+showNewsSlides(newslideIndex);
 
 function showNewsSlides(n) {
   let i;
@@ -43,15 +43,35 @@ function showNewsSlides(n) {
   for (i = 0; i < newsSlides.length; i++) {
     newsSlides[i].style.display = "none";  
   }
-  newslideIndex++;
-  if (newslideIndex > newsSlides.length) {newslideIndex = 1}    
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
   newsSlides[newslideIndex-1].style.display = "block";  
   dots[newslideIndex-1].className += " active";
-  setTimeout(showNewsSlides, 2000,n); // Change image every 2 seconds
+  // setTimeout(showNewsSlides, 2000); // Change every 2 seconds
 }
 function currentSlide(n) {
-  showNewsSlides(slideIndex = n);
+  showNewsSlides(newslideIndex=n);
+}
+
+
+
+// top btn
+let topBtn = document.getElementById("topBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
