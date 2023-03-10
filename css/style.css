@@ -29,6 +29,9 @@ body {
   padding-top: 10rem;
   padding-bottom: 2rem;
 }
+.py-2 {
+  padding: 2rem 0;
+}
 .py-5 {
   padding: 5rem 0;
 }
@@ -40,9 +43,6 @@ a {
   text-decoration: none;
   color: var(--white);
 }
-ul {
-  list-style: none;
-}
 .container {
   width: 80%;
   margin: 0 auto;
@@ -52,7 +52,7 @@ ul {
 }
 h2 {
   color: var(--orange);
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight:600;
   line-height: 109.5%;
   /* padding: 2rem; */
@@ -88,8 +88,8 @@ nav {
 .background {
   position: relative;
   /* height: 100vh; */
-  padding: 0;
-  margin: 0;
+  background-color: var(--white);
+
 }
 .background img {
   width: 100%;
@@ -154,14 +154,21 @@ nav ul li a:hover {
   /* padding: 2rem 0; */
   width: calc((100% / 3) - 2rem);
   color: var(--white);
-  line-height: 140%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.experience .experience-card p{
   font-size: 1.6rem;
-}
-.experience-card div,
-p {
-  padding: 1rem 0.5rem;
-}
+  line-height: 140%;
 
+
+}
+.experience-card img {
+  width: 22%;
+}
 /* rectangle-section */
 .rectangle-section {
   display: flex;
@@ -210,6 +217,7 @@ p {
 .news .rectangle-section .content,
 .rectangle-section-img {
   width: 40%;
+  /* font-size: 2.2rem; */
 }
 
 .news .rectangle-section-img img {
@@ -228,19 +236,27 @@ p {
 .slides {
   display: none;
   width: 100%;
-  justify-content: center;
-  padding: 5rem;
+  justify-content: end;
+  padding: 5rem 0;
   /* height: 200px; */
   align-items: center;
   background-color: var(--orange);
+  /* position: relative; */
+
+}
+@keyframes move{
+  from {left:0px}
+  to {left:100%}
 }
 .news-slides {
   display: none;
   /* width: 100%; */
   /* justify-content: center; */
 }
-.slider img {
-  vertical-align: middle;
+.slides img {
+  position: relative;
+  animation: move 5s infinite;
+  animation-timing-function: linear;
 }
 
 .dot {
@@ -272,7 +288,7 @@ p {
 .info {
   width: 30%;
   color: var(--black);
-  font-size: 2rem;
+  font-size: 1rem;
   align-items: center;
   /* margin: 2rem; */
 }
@@ -325,6 +341,7 @@ p {
   color: var(--white);
   border: none;
   width: 16rem;
+  font-family: "Cairo";
   font-size: 2rem;
   padding: 1rem 1.2rem;
 }
@@ -337,7 +354,8 @@ p {
 .lawyers {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-bottom: 5rem;
 }
 .w-50 {
   width: 50%;
@@ -347,25 +365,32 @@ p {
 }
 
 .lawyers .w-50 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
+  line-height: 109.5%;
+  padding: 1rem 0;
 }
-.lawyers .w-50 p {
+.lawyers .w-50 h6 {
   color: var(--black-80);
   font-family: "Rubik";
   font-size: 2rem;
+  line-height: 140%;
+  
+
 }
 
 /* about */
 .about {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .about .w-50 h2 {
   color: var(--orange);
 }
 .about .w-50 p {
   color: var(--black-80);
+  line-height: 140%;
   font-family: "Rubik";
+  font-size: 2rem;
 }
 
 /* top-btn */
@@ -392,54 +417,57 @@ p {
 }
 
 /* footer */
-.footer {
-  display: flex;
-  /* justify-content: space-around; */
-  align-items: center;
-  padding: 3rem 10rem;
-  width: 100%;
+footer{
   background-color: var(--green);
 
 }
+.footer {
+  display: flex;
+  align-items: center;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+  width: 100%;
 
-.col-4 {
-  /* width: calc(100% / 3); */
 }
-.footer-right,.footer-left {
-  width: 50%;
-  /* margin: 0 5rem; */
 
+
+
+.footer-right, .footer-left ,.footer-center{
+  width: calc(100%/3);
 }
+
 .footer-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
 }
 
 .sociallogos {
-  width: 50%;
+  /* width: 50%; */
 }
 .sociallogos a {
   font-size: 2.2rem;
   padding: 0 1.2rem;
   color: var(--orange);
 }
-.components {
-  display: flex;
-  flex-wrap: wrap;
-}
-.components ul {
-  /* margin: auto 50%; */
+
+
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: space-evenly; */
+
+
+
+.footer ul {
   text-align: right;
+  list-style: none;
+
 }
-.components li {
-  /* padding: 0.5rem 0; */
+.footer li {
   font-size: 1.5rem;
   color: var(--white);
   font-weight: 300;
 }
-.components .bold{
+.footer .bold{
   font-weight: bold;
 }
   
@@ -455,4 +483,110 @@ p {
 }
 #Copyright a {
   text-decoration: underline;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 1.7rem;/* Location of the box */
+  left:0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: hidden;
+  overflow-y: auto;
+  /* overflow: auto; Enable scroll if needed */
+  /* background-color: rgba(0,0,0,0.4); Black w/ opacity */
+}
+
+/* .modal-dialog{
+  max-width: 500px;
+  margin: 1.75rem auto;
+} */
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  color: var(--black-80);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--black);
+  border-radius: 0.3rem;
+  width: 500px;
+  background-color:white;   
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.7s;
+  animation-name: animatetop;
+  animation-duration: 0.7s;
+  
+}
+
+
+/* The Close Button */
+.close {
+  color: var(--black-80);
+  float: right;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.close:hover,
+.close:focus {
+  color: var(--orange);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  color: var(--black-80);
+  border-bottom: 1px solid var(--black-95);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-title{
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+.modal-body {
+  padding: 1rem;
+  list-style-position: inside;
+}
+
+
+.modal-footer {
+  padding: 1rem;
+  color: var(--black-80);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  border-top: 1px solid var(--black-95);
+  padding: 1rem;
+
+}
+.modal-footer button{
+  display: inline-block;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  width: auto;
+  padding: 0.3rem 0.7rem;  
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
 }

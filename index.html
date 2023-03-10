@@ -66,7 +66,7 @@
           والخبرة <br />والنزاهة
         </h1>
         <a href="#">
-          <button class="btn">إستشيرنا</button>
+          <button class="btn">إستشرنا</button>
         </a>
       </div>
     </section>
@@ -75,7 +75,7 @@
       <div class="container">
         <div class="rectangle-section left-rectangle">
           <div class="content">
-            <h2>نقدم لك جميع الخدمات والاستشارات القانونية</h2>
+            <h2 class="py-2">نقدم لك جميع الخدمات والاستشارات القانونية</h2>
             <p>
               إذا كنت بحاجة إلى محام ، فيمكننا مساعدتك. لقد ساعدنا مئات الأشخاص
               في الماضي ، وسنفعل الشيء نفسه من أجلك.
@@ -91,51 +91,96 @@
     </section>
 
     <!--experience  -->
-    <section class="experience bg-primary text-center">
+    <section class="experience bg-primary">
       <div class="container">
         <h2 class="text-center">خبراتنا</h2>
         <div class="experience-cards py-5">
           <div class="experience-card">
-            <div>
-              <img src="./imgages/civil.svg" alt="" />
+            <img src="./imgages/civil.svg" alt="" />
+            <p id="modal-1">القانون المدني والتجاري</p>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">القانون المدني والتجاري</h5>
+                  <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>
+                      قضايا الفسخ والإلزام، والحجز على ما للمدين لدى الغير.
+                    </li>
+                    <li>
+                      قضايا الإيجارات في ضوء القانون المدني، وقانون إيجار
+                      الأماكن (القانون القديم).
+                    </li>
+                    <li>
+                      قضايا التعويضات بكافة أنواعها بما فيها التعويض الناجم عن
+                      عدم الإلتزام، أوالتأخر في تنفيذ الإلتزام، وكذلك التعويض عن
+                      الأخطاء المهنية، أوالإهمال المهني ومنها الإهمال الطبي،
+                      والحوادث.
+                    </li>
+                    <li>قضايا الإثراء بلا سبب.</li>
+                    <li>
+                      قضايا التعويض عن جميع الجرائم الإلكترونية كالإختراق، وسرقة
+                      المعلومات، والتنصت، واستراق السمع، والبصر، والسب، والقذف،
+                      والبلاغ الكاذب، والتشهير، والتهديد، و الإبتزاز باستخدام
+                      كافة وسائل التواصل الإجتماعي والتقني.
+                    </li>
+                    <li>
+                      قضايا الطرد للغصب، والمطالبة بالريع عن فترة الغصب،
+                      والإستغلال.
+                    </li>
+                    <li>
+                      قضايا الفرز، والتجنيب لجميع الأموال المشتركة سواء ثروة
+                      عقارية، أو معدات، أو أموال سائلة، أو شركات ... إلخ.
+                    </li>
+                    <li>
+                      نقل ملكية جميع الأصول العقارية، والأراضي أمام مصلحة الشهر
+                      العقاري.
+                    </li>
+                    <li>
+                      دعاوى صحة التعاقد، وصحة التوقيع، وصحة ونفاذ العقود الغير
+                      مسجلة.
+                    </li>
+                    <li>
+                      قضايا الصورية، والغبن، وإبطال بنود الإذعان في العقود.
+                    </li>
+                    <li>قرارات التمكين، والحيازة، والطعن عليها.</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn">إغلاق</button>
+                </div>
+              </div>
             </div>
-            <p>القانون المدني والتجاري</p>
           </div>
           <div class="experience-card">
-            <div>
-              <img src="./imgages/company.svg" alt="" />
-            </div>
+            <img src="./imgages/company.svg" alt="" />
             <p>تأسيس الشركات</p>
           </div>
           <div class="experience-card">
-            <div>
-              <img src="./imgages/people.svg" alt="" />
-            </div>
+            <img src="./imgages/people.svg" alt="" />
             <p>قانون وقضايا الأسرة</p>
           </div>
           <div class="experience-card">
-            <div>
-              <img src="./imgages/government.svg" alt="" />
-            </div>
+            <img src="./imgages/government.svg" alt="" />
             <p>القضاء الإداري</p>
           </div>
           <div class="experience-card">
-            <div>
-              <img src="./imgages/workers.svg" alt="" />
-            </div>
+            <img src="./imgages/workers.svg" alt="" />
             <p>قانون العمل والقضايا العمالية</p>
           </div>
           <div class="experience-card">
-            <div>
-              <img src="./imgages/crimnal.svg" alt="" />
-            </div>
+            <img src="./imgages/crimnal.svg" alt="" />
             <p>القانون الجنائي</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-primary py-5">
+    <section class="bg-primary py-2">
       <div class="container">
         <div class="rectangle-section right-rectangle">
           <div class="rectangle-section-img">
@@ -144,7 +189,7 @@
             </div>
           </div>
           <div class="content">
-            <h2>سبب تميزنا؟</h2>
+            <h2 class="py-2">سبب تميزنا؟</h2>
             <p>
               مؤسسة الباجوري للمحاماة أُسست عام 1920 على يد الدكتور حسنين
               الباجوري وأستمر عملها القانوني حتى الأن, في هذه الفترة عملت
@@ -168,18 +213,18 @@
           />
         </div>
       </div>
-      <div class="slides">
+      <!-- <div class="slides">
         <img src="./imgages/civil.jpg" alt="" height="100px" width="300px" />
-      </div>
+      </div> -->
     </section>
 
-    <section class="news bg-primary py-5">
-      <h2 class="text-center">أخر أخبار المؤسسة</h2>
-      <div class="slider container py-5">
+    <section class="news bg-primary">
+      <h2 class="text-center py-5">أخر أخبار المؤسسة</h2>
+      <div class="slider container">
         <div class="news-slides">
           <div class="rectangle-section left-rectangle">
             <div class="content">
-              <h2>محكمة النقض</h2>
+              <h2 class="py-2">محكمة النقض</h2>
               <p>
                 مؤسسة الباجوري للمحاماة أُسست عام 1920 على يد الدكتور حسنين
                 الباجوري وأستمر عملها القانوني حتى الأن, في هذه الفترة عملت
@@ -202,7 +247,7 @@
         <div class="news-slides">
           <div class="rectangle-section left-rectangle">
             <div class="content">
-              <h2>محكمة النقض</h2>
+              <h2 class="py-2">محكمة النقض</h2>
               <p>
                 مؤسسة الباجوري للمحاماة أُسست عام 1920 على يد الدكتور حسنين
                 الباجوري وأستمر عملها القانوني حتى الأن, في هذه الفترة عملت
@@ -223,7 +268,7 @@
           </div>
         </div>
       </div>
-      <div class="text-center">
+      <div class="text-center py-2">
         <span class="dot" onclick="currentSlide(1)"></span>
         <span class="dot" onclick="currentSlide(2)"></span>
         <!-- <span class="dot" onclick="currentSlide(3)"></span> 
@@ -234,53 +279,39 @@
 
     <!-- top btn -->
     <button onclick="topFunction()" id="topBtn" title="Go to top ">
-      <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-sharp fa-solid fa-chevron-up"></i>
     </button>
 
     <footer>
-      <section class="footer">
-        <div class="footer-right components">
-            <div class="w-50">
-              <ul>
-                <li class="bold">المؤسسة</li>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="lawyers.html">محامونا</a></li>
-              </ul>
-            </div>
-            <div class="w-50">
-              <ul>
-                <li><a href="about.html">عنا</a></li>
-                <li><a href="news.html">الأخبار</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-              </ul>
-            </div>
-        </div>
-        <div class="footer-left text-center">
-          <div class="logo">
-            <a href="#home"><img src="./imgages/logo.svg" alt="logo" /></a>
+      <section class="container">
+        <div class="footer">
+          <div class="footer-right">
+            <ul>
+              <li class="bold">المؤسسة</li>
+              <li><a href="index.html">الرئيسية</a></li>
+              <li><a href="lawyers.html">محامونا</a></li>
+            </ul>
           </div>
-          <div class="sociallogos text-center">
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-
+          <div class="footer-center">
+            <ul>
+              <li><a href="about.html">عنا</a></li>
+              <li><a href="news.html">الأخبار</a></li>
+              <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+          </div>
+          <div class="footer-left">
+            <div class="logo">
+              <a href="#home"><img src="./imgages/logo.svg" alt="logo" /></a>
+            </div>
+            <div class="sociallogos text-center">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- <section class="footer">
-        <div class="col-4">
-          <div class="logo">
-            <a href="#home"><img src="./imgages/logo.svg" alt="logo" /></a>
-          </div>
-          <div class="sociallogos">
-            <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-
-      </section> -->
       <section id="Copyright" class="text-center">
         <p>&copy; All Rights Reserved, ALBAGORY ORGANIZATION</p>
         <p>
