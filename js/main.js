@@ -15,7 +15,7 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
 // slider
 let slideIndex = 0;
-showSlides();
+
 
 function showSlides() {
   let i;
@@ -28,12 +28,10 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "flex";
-  setTimeout(showSlides, 5000); // Change  every 2 seconds
+  setTimeout(showSlides, 5000); // Change  every 5 seconds
 }
-
 // news slider
 let newslideIndex = 1;
-showNewsSlides(newslideIndex);
 
 function showNewsSlides(n) {
   let i;
@@ -53,11 +51,18 @@ function showNewsSlides(n) {
   }
   newsSlides[newslideIndex - 1].style.display = "block";
   dots[newslideIndex - 1].className += " active";
-  // setTimeout(showNewsSlides, 2000); // Change every 2 seconds
+  // setTimeout(showNewsSlides, 2000); // 
 }
 function currentSlide(n) {
   showNewsSlides((newslideIndex = n));
 }
+
+function onHomePageLoad(){
+  showSlides();
+  showNewsSlides(newslideIndex);
+}
+
+
 
 // top btn
 let topBtn = document.getElementById("topBtn");
@@ -80,29 +85,26 @@ function topFunction() {
 }
 
 
-
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("modal-1");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal.style.display = "block";
+function openModal(modalName){
+  let modal = document.getElementById(modalName);
+    modal.style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+ function closeModal(modalName) {
+  let modal = document.getElementById(modalName);
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  let modal = document.getElementsByClassName("modal");
+  for(let i=0 ; i<modal.length ; i++){
+      if(modal[i].style.display=="block")
+      {
+        if (event.target == modal[i]) {
+          modal[i].style.display = "none";
+        }
+      }
   }
+ 
 }

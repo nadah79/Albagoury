@@ -9,6 +9,7 @@
   --white: #fff8db;
   --black-80: rgba(34, 34, 34, 80%);
   --black-95: rgba(34, 34, 34, 95%);
+  --black-15:rgba(34, 34, 34, 15%)
 }
 
 * {
@@ -163,12 +164,18 @@ nav ul li a:hover {
 .experience .experience-card p{
   font-size: 1.6rem;
   line-height: 140%;
+  text-align: center;
+  cursor: pointer;
 
 
 }
 .experience-card img {
   width: 22%;
+  text-align: center;
+
 }
+
+
 /* rectangle-section */
 .rectangle-section {
   display: flex;
@@ -288,7 +295,7 @@ nav ul li a:hover {
 .info {
   width: 30%;
   color: var(--black);
-  font-size: 1rem;
+  font-size: 1.2rem;
   align-items: center;
   /* margin: 2rem; */
 }
@@ -299,18 +306,27 @@ nav ul li a:hover {
 .info #address {
   margin: 2rem;
   background-color: var(--green-25);
-  text-align: center;
   /* padding: 3rem 1rem; */
   height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  list-style-position: inside ;
 }
-.info #mobile {
+.info #mobile ul{
   direction: ltr;
+  list-style-type: none;
+
+}
+
+.info #address ul{
+  padding: 0 1.5rem;
+  text-align: right;
+  /* list-style-type: square; */
+
 }
 .info i {
-  font-size: 5rem;
+  font-size: 3.5rem;
   color: var(--orange);
 }
 
@@ -353,44 +369,61 @@ nav ul li a:hover {
 /* lawyers */
 .lawyers {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
-  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
-.w-50 {
+.w-40 {
+  width: 40%;
+}
+.w-50{
   width: 50%;
 }
-.lawyers .w-50 img {
-  width: 60%;
+
+.partners,.assistants{
+  width: 40%;
+}
+.lawyers img {
+  width: 100%;
 }
 
-.lawyers .w-50 h2 {
-  font-size: 3rem;
-  line-height: 109.5%;
+.lawyers  h2 {
   padding: 1rem 0;
 }
-.lawyers .w-50 h6 {
+ .partners  h2 {
+  font-size: 3rem;
+}
+ .assistants  h2 {
+  font-size: 2.3rem;
+}
+.lawyers h6 {
   color: var(--black-80);
   font-family: "Rubik";
   font-size: 2rem;
   line-height: 140%;
-  
 
 }
 
 /* about */
 .about {
   display: flex;
+  justify-content: space-between;
   /* align-items: center; */
 }
-.about .w-50 h2 {
-  color: var(--orange);
+
+.about img{
+  height: auto;
 }
-.about .w-50 p {
+.about  h2 {
+  color: var(--orange);
+  padding: 1.6rem 0;
+
+}
+.about  p {
   color: var(--black-80);
   line-height: 140%;
   font-family: "Rubik";
   font-size: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 /* top-btn */
@@ -416,6 +449,7 @@ nav ul li a:hover {
   color: var(--orange); */
 }
 
+
 /* footer */
 footer{
   background-color: var(--green);
@@ -432,13 +466,13 @@ footer{
 
 
 
-.footer-right, .footer-left ,.footer-center{
-  width: calc(100%/3);
+.footer-right{
+  width: 70%;
 }
 
 .footer-left {
-  display: flex;
-  flex-direction: column;
+  width: 30%;
+
 }
 
 .sociallogos {
@@ -469,6 +503,25 @@ footer{
 }
 .footer .bold{
   font-weight: bold;
+}
+
+.w-70{
+  width: 70%;
+}
+.w-30{
+  width: 30%;
+}
+.titles{
+  display: flex;
+  justify-content: center;
+}
+.page-titles{
+  columns: 2;
+  width: 100%;
+}
+li.page-title{
+  display: block;
+  width: 50%;
 }
   
 #Copyright {
@@ -543,7 +596,7 @@ footer{
 
 .modal-header {
   color: var(--black-80);
-  border-bottom: 1px solid var(--black-95);
+  border-bottom: 1px solid var(--black-15);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -552,10 +605,11 @@ footer{
 .modal-title{
   margin-bottom: 0;
   line-height: 1.5;
+  font-size: 1.2rem;
 }
 .modal-body {
-  padding: 1rem;
-  list-style-position: inside;
+  padding: 1rem 2.5rem 1rem 1rem;
+  text-align: right;
 }
 
 
@@ -565,7 +619,8 @@ footer{
   display: flex;
   justify-content: end;
   align-items: center;
-  border-top: 1px solid var(--black-95);
+  border-top: 1px solid var(--black-15);
+  ;
   padding: 1rem;
 
 }

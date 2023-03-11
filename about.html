@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/mobile.css" />
 
     <title>عنا</title>
   </head>
   <body id="home">
-
     <header>
       <nav id="navbar">
         <button class="hamburger">
@@ -30,73 +29,434 @@
       </nav>
     </header>
 
-      <!-- about -->
-      <section class="bg-primary">
-        <div class=" container py">
-          <h2 class="text-center">عنا</h2>
-            <div class="about py-5">
-              <div class="w-50">
-                <h2 class="py-2">أ. حسنين الباجوري</h2>
-                <p>
-                  أسس الأستاذ حسنين الباجوري مكتب حسنين الباجوري للاستشارات القانونية عام 1982.
-                </p>
-                <p class="py-2">
-                  ويمتلك مكتب الأستاذ حسنين الباجوري خبرة واسعة في القانون المدني والقانون التجاري وقوانين البنوك والشركات والاستثمار وسوق رأس المال وقانون العمل.
-                </p>
-                <p class="py-2">
-                  تخرج الأستاذ حسنين الباجوري من كلية الشريعة والقانون بالقاهرة - جامعة الأزهر عام 1980 
-                </p>
-            </div>
-            <div class="w-50 text-center">
-              <div class="green-rectangle">
-                <img  src="./imgages/hasnen elbagory.svg" width="100%">
-              </div>
-            </div>
-            </div>
-          
+    <!-- about -->
+    <section class="bg-primary">
+      <div class="container py">
+        <h2 class="text-center">عنا</h2>
+        <div class="about py-5">
+          <div class="w-50">
+            <h2>أ. حسنين الباجوري</h2>
+            <p>
+              أسس الأستاذ حسنين الباجوري مكتب حسنين الباجوري للاستشارات
+              القانونية عام 1982.
+            </p>
+            <p>
+              ويمتلك مكتب الأستاذ حسنين الباجوري خبرة واسعة في القانون المدني
+              والقانون التجاري وقوانين البنوك والشركات والاستثمار وسوق رأس المال
+              وقانون العمل.
+            </p>
+            <p>
+              تخرج الأستاذ حسنين الباجوري من كلية الشريعة والقانون بالقاهرة -
+              جامعة الأزهر عام 1980
+            </p>
+          </div>
+          <div class="w-40">
+            <img
+              class="green-rectangle"
+              src="./imgages/hasnen elbagory.svg"
+              width="100%"
+            />
+          </div>
         </div>
-      </section>
-   
+      </div>
+    </section>
 
-      <footer>
-        <section class="container">
-          <div class="footer">
-            <div class="footer-right">
-              <ul>
-                <li class="bold">المؤسسة</li>
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="lawyers.html">محامونا</a></li>
-              </ul>
-            </div>
-            <div class="footer-center">
-              <ul>
-                <li><a href="about.html">عنا</a></li>
-                <li><a href="news.html">الأخبار</a></li>
-                <li><a href="contact.html">تواصل معنا</a></li>
-              </ul>
-            </div>
-            <div class="footer-left">
-              <div class="logo">
-                <a href="#home"><img src="./imgages/logo.svg" alt="logo" /></a>
-              </div>
-              <div class="sociallogos text-center">
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+    <!--experience  -->
+    <section class="experience bg-primary">
+      <div class="container">
+        <h2 class="text-center">خبراتنا</h2>
+        <div class="experience-cards py-5">
+          <div class="experience-card">
+            <img src="./imgages/civil.svg" alt="" />
+            <p onclick="openModal('civilLawModal')">القانون المدني والتجاري</p>
+            <!-- The Modal -->
+            <div id="civilLawModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">القانون المدني والتجاري</h5>
+                  <span class="close" onclick="closeModal('civilLawModal')"
+                    >&times;</span
+                  >
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>
+                      قضايا الفسخ والإلزام، والحجز على ما للمدين لدى الغير.
+                    </li>
+                    <li>
+                      قضايا الإيجارات في ضوء القانون المدني، وقانون إيجار
+                      الأماكن (القانون القديم).
+                    </li>
+                    <li>
+                      قضايا التعويضات بكافة أنواعها بما فيها التعويض الناجم عن
+                      عدم الإلتزام، أوالتأخر في تنفيذ الإلتزام، وكذلك التعويض عن
+                      الأخطاء المهنية، أوالإهمال المهني ومنها الإهمال الطبي،
+                      والحوادث.
+                    </li>
+                    <li>قضايا الإثراء بلا سبب.</li>
+                    <li>
+                      قضايا التعويض عن جميع الجرائم الإلكترونية كالإختراق، وسرقة
+                      المعلومات، والتنصت، واستراق السمع، والبصر، والسب، والقذف،
+                      والبلاغ الكاذب، والتشهير، والتهديد، و الإبتزاز باستخدام
+                      كافة وسائل التواصل الإجتماعي والتقني.
+                    </li>
+                    <li>
+                      قضايا الطرد للغصب، والمطالبة بالريع عن فترة الغصب،
+                      والإستغلال.
+                    </li>
+                    <li>
+                      قضايا الفرز، والتجنيب لجميع الأموال المشتركة سواء ثروة
+                      عقارية، أو معدات، أو أموال سائلة، أو شركات ... إلخ.
+                    </li>
+                    <li>
+                      نقل ملكية جميع الأصول العقارية، والأراضي أمام مصلحة الشهر
+                      العقاري.
+                    </li>
+                    <li>
+                      دعاوى صحة التعاقد، وصحة التوقيع، وصحة ونفاذ العقود الغير
+                      مسجلة.
+                    </li>
+                    <li>
+                      قضايا الصورية، والغبن، وإبطال بنود الإذعان في العقود.
+                    </li>
+                    <li>قرارات التمكين، والحيازة، والطعن عليها.</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn"
+                    class="close"
+                    onclick="closeModal('civilLawModal')"
+                  >
+                    إغلاق
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-  
-        <section id="Copyright" class="text-center">
+          <div class="experience-card">
+            <img src="./imgages/company.svg" alt="" />
+            <p onclick="openModal('corporateLawModal')">تأسيس الشركات</p>
+            <!-- The Modal -->
+            <div id="corporateLawModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">تأسيس الشركات</h5>
+                  <span class="close" onclick="closeModal('corporateLawModal')"
+                    >&times;</span
+                  >
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>اختيار أفضل شكل قانوني للمستثمر.</li>
+                    <li>كتابة عقد الشركة حتى إتمام إجراءات التسجيل.</li>
+                    <li>
+                      تأسيس جميع أنواع الشركات (شركات أموال، شركات أشخاص).
+                    </li>
+                    <li>
+                      القيام بكافة الإجراءات وإيداع الأوراق لدى هيئة الاستثمار.
+                    </li>
+                    <li>استخراج السجل التجاري، وتسجيل العلامات التجارية.</li>
+                    <li>تأسيس فروع الشركات الأجنبية بمصر.</li>
+                    <li>تسجيل مكاتب التمثيل بمصر.</li>
+                    <li>
+                      اعتماد محاضر اجتماعات مجالس الإدارة والجمعيات العامة
+                      العادية والغير عادية.
+                    </li>
+                    <li>فسخ كافة أنواع الشركات وتصفيتها.</li>
+                    <li>
+                      تسجيل شركات المقاولات في سجل مقاولي التشييد والبناء
+                      ومقاولي القطاع الخاص.
+                    </li>
+                    <li>
+                      استخراج رخص التشغيل والسجل الصناعي وتحديد بداية النشاط.
+                    </li>
+                    <li>
+                      استخراج سجل المستوردين وسجل المصدرين وسجل الوكلاء
+                      التجاريين.
+                    </li>
+                    <li>تمثيل الشركات أمام كافة الجهات الحكومية وغيرها.</li>
+                    <li>
+                      القيام بكافة أنواع تصاريح العمل والإقامات للسادة
+                      المستثمرين العرب والأجانب.
+                    </li>
+                    <li>
+                      السير في إجراءات البيع أو التنازل عن الأسهم في الشركات
+                      المساهمة.
+                    </li>
+                    <li>
+                      تقديم المشورة القانونية والفنية للموكل عن الشكل القانوني
+                      المقترح أو القانون الذي ستنشأ تحت مظلته الشركة، تسجيل
+                      العلامات التجارية للشركة (علامة تجارية مسجلة، براءات
+                      الاختراع، كافة حقوق الملكية الفكرية).
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn"
+                    class="close"
+                    onclick="closeModal('corporateLawModal')"
+                  >
+                    إغلاق
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="experience-card">
+            <img src="./imgages/people.svg" alt="" />
+            <p onclick="openModal('familyLawModal')">قانون وقضايا الأسرة</p>
+            <!-- The Modal -->
+            <div id="familyLawModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">قانون وقضايا الأسرة</h5>
+                  <span class="close" onclick="closeModal('familyLawModal')"
+                    >&times;</span
+                  >
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>
+                      قضايا الأحوال الشخصية، الزواج والطلاق والنفقة وما يترتب
+                      عليهم من آثار.
+                    </li>
+                    <li>قضايا الخلع والطاعة وما يتعلق بهما.</li>
+                    <li>معالجة جميع القضايا الحساسة وحل الخلافات الزوجية.</li>
+                    <li>
+                      تنفيذات الأحوال الشخصية وقضايا المواريث والوصايا و إدارة
+                      التركات و الهبة.
+                    </li>
+                  </ul>
+                  <br />
+                  <strong>
+                    ونظراً لما في قضايا الأحوال الشخصية والأسرة من احتمالات
+                    مأساوية لذلك أسعى دائماً لجعل الإجراءات القانونية واضحة
+                    وسلسة لموكليني بقدر الإمكان وأقوم بتمثيلهم أمام جميع مراحل
+                    التقاضي بداية واستئناف وتمييز وأمام كافة المحاكم العاملة
+                    بالدولة، كما أبذل لهم النصح ومحاولة حل الخلافات قدر الإمكان.
+                  </strong>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn"
+                    class="close"
+                    onclick="closeModal('familyLawModal')"
+                  >
+                    إغلاق
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="experience-card">
+            <img src="./imgages/government.svg" alt="" />
+            <p onclick="openModal('stateLawModal')">القضاء الإداري</p>
+            <!-- The Modal -->
+            <div id="stateLawModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">القضاء الإداري (مجلس الدولة)</h5>
+                  <span class="close" onclick="closeModal('stateLawModal')"
+                    >&times;</span
+                  >
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>
+                      دعاوى الإلغاء بكافة أنواعها اللتي من ضمنها القرارات
+                      السلبية.
+                    </li>
+                    <li>دعاوى وقف التنفيذ بكافة أنواعها.</li>
+                    <li>
+                      دعاوى براءة ذمة الممول من كافة ديون الضرائب العامة والقيمة
+                      المضافة والدمغة وكسب العمل.
+                    </li>
+                    <li>
+                      دعاوى استرداد الرسوم الجمركية المدفوعة بالمخالفة للقانون
+                      بكافة أنواعها.
+                    </li>
+                    <strong> الهدم والبناء والتراخيص </strong>
+                    <li>دعاوى إلغاء قرار برفض ترخيص منشأة صناعية.</li>
+                    <li>
+                      دعاوى إلغاء قرار برفض ترخيص وحيازة سلاح ناري مع توافر
+                      الشروط القانونية المقررة من قبل وزارة الداخلية.
+                    </li>
+                    <li>دعاوى إلغاء قرار برفض منح ترخيص بناء.</li>
+                    <li>دعاوى إلغاء قرار برفض منح ترخيص هدم.</li>
+                    <li>دعاوى إلغاء قرار هدم صادر من الحكم المحلي.</li>
+                    <li>
+                      دعاوى التعويض المكمل بشأن قرارات الاستيلاء على الأراضي
+                      والمنازل من أجل الانتفاع العام.
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn"
+                    class="close"
+                    onclick="closeModal('stateLawModal')"
+                  >
+                    إغلاق
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="experience-card">
+            <img src="./imgages/workers.svg" alt="" />
+            <p onclick="openModal('workLawModal')">
+              قانون العمل والقضايا العمالية
+            </p>
+            <!-- The Modal -->
+            <div id="workLawModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">قانون العمل والقضايا العمالية</h5>
+                  <span class="close" onclick="closeModal('workLawModal')"
+                    >&times;</span
+                  >
+                </div>
+                <div class="modal-body">
+                  <strong>
+                    لدي خبرة واسعة في مجال إدارة قضايا العمل والعمال و أكرس نفسي
+                    لمساعدة موكليني وتزويدهم بالاستشارات القانونية اللازمة ووضع
+                    الحلول الاستباقية لحل الخلافات التي تنشأ عن علاقة العمل قبل
+                    اللجوء إلى المحاكم.
+                  </strong>
+                  <ul>
+                    <li>
+                      تقديم كافة الاستشارات القانونية والخاصة فيما يتعلق بقانون
+                      العمل.
+                    </li>
+                    <li>التعامل مع عملية التفاوض وصياغة وإنهاء عقود العمل.</li>
+                    <li>
+                      تمثيل موكليني أمام المحاكم العمالية على اختلاف أنواعها
+                      ودرجاتها.
+                    </li>
+                    <li>
+                      تحديد حقوق العاملين لدى جميع موكليني من شركات ومؤسسات.
+                    </li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn"
+                    class="close"
+                    onclick="closeModal('workLawModal')"
+                  >
+                    إغلاق
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="experience-card">
+            <img src="./imgages/crimnal.svg" alt="" />
+            <p onclick="openModal('criminalLawModal')">القانون الجنائي</p>
+            <!-- The Modal -->
+            <div id="criminalLawModal" class="modal">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">القانون الجنائي</h5>
+                  <span class="close" onclick="closeModal('criminalLawModal')"
+                    >&times;</span
+                  >
+                </div>
+                <div class="modal-body">
+                  <ul>
+                    <li>
+                      جميع قضايا حقوق المرأة والطفل، وما يقع عليها من اعتداءات
+                      بدنية ونفسية وجنسية (تحرش، وإغتصاب).
+                    </li>
+                    <li>
+                      جميع القضايا الجنائية بمختلف أشكالها مثل ( القتل، الشروع
+                      في القتل، العاهة المستديمة).
+                    </li>
+                    <li>
+                      قضايا المخدرات ( التعاطي، الإتجار، الجلب ) بكافة أنواعها.
+                    </li>
+                    <li>
+                      قضايا إحراز الأسلحة النارية والبيضاء، وتصنيعها بدون ترخيص.
+                    </li>
+                    <li>
+                      قضايا البناء بدون ترخيص، والتعدي على الأراضي الزراعية
+                      بمختلف أنواعها.
+                    </li>
+                    <li>قضايا التزييف والتزوير والاختلاس والأموال العامة.</li>
+                    <li>قضايا الرشوة والتربح والإستيلاء على المال العام.</li>
+                    <li>قضايا توظيف الأموال بكافة أنواعها.</li>
+                    <li>قضايا التسويق الشبكي والفوركس والتلاعب في البورصة.</li>
+                    <li>قضايا الشيكات والتبديد وكافة السندات المالية.</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn"
+                    class="close"
+                    onclick="closeModal('criminalLawModal')"
+                  >
+                    إغلاق
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <button onclick="topFunction()" id="topBtn" title="Go to top ">
+      <i class="fa-sharp fa-solid fa-chevron-up"></i>
+    </button>
+    <footer>
+      <section class="container">
+          <div class="footer">
+                  <div class="footer-right titles">
+                      <ul class="page-titles">
+                          <li class=" bold">المؤسسة</li>
+                          <li><a href="index.html">الرئيسية</a></li>
+                          <li><a href="lawyers.html">محامونا</a></li>
+                          <li><a href="about.html">عنا</a></li>
+                          <li><a href="news.html">الأخبار</a></li>
+                          <li><a href="contact.html">تواصل معنا</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-left">
+                      <div class="logo">
+                          <a href="#home"><img src="./imgages/logo.svg" alt="logo" /></a>
+                      </div>
+                      <div class="sociallogos text-center">
+                          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                      </div>
+                  </div>
+          </div>
+      </section>
+
+      <section id="Copyright" class="text-center">
           <p>&copy; All Rights Reserved, ALBAGORY ORGANIZATION</p>
           <p>
-            Developed By:
-            <a href="https://irisstudio.org/" target="_blank">IRIS Studio</a>
+              Developed By:
+              <a href="https://irisstudio.org/" target="_blank">IRIS Studio</a>
           </p>
-        </section>
-      </footer>
-  
+      </section>
+  </footer>
+
     <script
       src="https://kit.fontawesome.com/f5a62c1078.js"
       crossorigin="anonymous"
