@@ -4,6 +4,7 @@ let navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("show");
+
 });
 
 document.querySelectorAll(".nav-link").forEach((n) =>
@@ -64,18 +65,22 @@ function onHomePageLoad(){
 
 
 
-// top btn
+// top btn & scroll
 let topBtn = document.getElementById("topBtn");
+let nav = document.getElementById("navbar");
 
 window.onscroll = function () {
   scrollFunction();
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     topBtn.style.display = "block";
+    nav.classList.add("nav-background");
   } else {
     topBtn.style.display = "none";
+    nav.classList.remove("nav-background");
+
   }
 }
 
