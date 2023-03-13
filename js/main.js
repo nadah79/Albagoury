@@ -29,7 +29,7 @@ function showSlides() {
     slideIndex = 1;
   }
   slides[slideIndex - 1].style.display = "flex";
-  setTimeout(showSlides, 5000); // Change  every 5 seconds
+  setTimeout(showSlides, 10000); // Change  every 5 seconds
 }
 // news slider
 let newslideIndex = 1;

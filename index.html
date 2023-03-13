@@ -37,23 +37,27 @@
             <button class="btn">إستشيرنا</button>
             </a>
     </section> -->
-    <nav id="navbar">
-      <button class="hamburger">
-        <i class="fa-solid fa-bars"></i>
-      </button>
-      <div class="logo">
-        <a href="index.html" onclick="{clickHandle}"
-          ><img src="./imgages/logo.svg" alt="logo"
-        /></a>
-      </div>
-      <ul class="nav-menu">
-        <li><a class="nav-link" href="index.html">الرئيسية</a></li>
-        <li><a class="nav-link" href="about.html">عنا</a></li>
-        <li><a class="nav-link" href="lawyers.html">محامونا</a></li>
-        <li><a class="nav-link" href="news.html">الأخبار</a></li>
-        <li><a class="nav-link" href="contact.html">تواصل معنا</a></li>
-      </ul>
-    </nav>
+    <header id="navbar">
+      <nav>
+        <button class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="logo">
+          <a href="index.html" onclick="{clickHandle}"
+            ><img src="./imgages/logo.svg" alt="logo"
+          /></a>
+        </div>
+        <ul class="nav-menu">
+          <li><a class="nav-link" href="index.html">الرئيسية</a></li>
+          <li><a class="nav-link" href="about.html">عنا</a></li>
+          <li><a class="nav-link" href="lawyers.html">محامونا</a></li>
+          <li><a class="nav-link" href="news.html">الأخبار</a></li>
+          <li><a class="nav-link" href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+    </header>
+  
 
     <section class="background">
       <img src="./imgages/background.png" alt="" />
@@ -479,19 +483,38 @@
       </div> -->
     </section>
 
-    <section class="news bg-primary py">
-      <div class="news">
+    <section class="bg-primary py">
         <h2 class="text-center">أخر أخبار المؤسسة</h2>
-        <div class="slider container">
+        <div class="news container">
+          <div class="slider">
+            <div class="news-slides">
+              <div class="rectangle-section left-rectangle">
+                <div class="content">
+                  <h2>محكمة النقض</h2>
+                  <p>
+                    مؤسسة الباجوري للمحاماة أُسست عام 1920 على يد الدكتور حسنين
+                    الباجوري وأستمر عملها القانوني حتى الأن, في هذه الفترة عملت
+                    المؤسسة على العديد من القضايا والأمور القانونية مع العديد من
+                    الشركاء كان نتيجتها ثقة الموكلين في هذه المؤسسة العريقة.
+                  </p>
+                  <a href="#">
+                    <button class="btn">إقرأ المزيد...</button>
+                  </a>
+                </div>
+                <div class="rectangle-section-img">
+                  <div class="green-rectangle">
+                    <img src="./imgages/صور-محكمة-النقص- 1.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
           <div class="news-slides">
             <div class="rectangle-section left-rectangle">
               <div class="content">
                 <h2>محكمة النقض</h2>
                 <p>
                   مؤسسة الباجوري للمحاماة أُسست عام 1920 على يد الدكتور حسنين
-                  الباجوري وأستمر عملها القانوني حتى الأن, في هذه الفترة عملت
-                  المؤسسة على العديد من القضايا والأمور القانونية مع العديد من
-                  الشركاء كان نتيجتها ثقة الموكلين في هذه المؤسسة العريقة.
+                  الباجوري
                 </p>
                 <a href="#">
                   <button class="btn">إقرأ المزيد...</button>
@@ -503,29 +526,11 @@
                 </div>
               </div>
             </div>
+           
           </div>
-        <div class="news-slides">
-          <div class="rectangle-section left-rectangle">
-            <div class="content">
-              <h2>محكمة النقض</h2>
-              <p>
-                مؤسسة الباجوري للمحاماة أُسست عام 1920 على يد الدكتور حسنين
-                الباجوري
-              </p>
-              <a href="#">
-                <button class="btn">إقرأ المزيد...</button>
-              </a>
-            </div>
-            <div class="rectangle-section-img">
-              <div class="green-rectangle">
-                <img src="./imgages/صور-محكمة-النقص- 1.svg" alt="" />
-              </div>
-            </div>
-          </div>
-         
-        </div>
       </div>
-    </div>
+        </div>
+     
 
       <div class="text-center py-2">
         <span class="dot" onclick="currentSlide(1)"></span>

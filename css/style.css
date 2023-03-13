@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Rubik&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Harmattan&display=swap');
 /* Main Style */
 :root {
   --green: #005419;
@@ -9,9 +8,11 @@
   --orange: #d07e01;
   --white: #fff8db;
   --white-70:rgb(255, 248, 219,70%);
+  --black: rgb(34, 34, 34);
   --black-80: rgba(34, 34, 34, 80%);
   --black-95: rgba(34, 34, 34, 95%);
   --black-15: rgba(34, 34, 34, 15%);
+  --black-30: rgba(34, 34, 34, 30%);
   --black-70: rgba(34, 34, 34, 70%);
 }
 
@@ -19,6 +20,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html,
@@ -36,12 +38,18 @@ body {
 .pb-3{
   padding-bottom: 3rem;
 }
+.pt-3{
+  padding-top: 3rem;
+}
 .py-2 {
   padding: 2rem 0;
 }
 .py-5 {
   padding: 5rem 0;
 }
+
+
+
 .text-center {
   text-align: center;
 }
@@ -64,20 +72,38 @@ h2 {
   line-height: 109.5%;
   /* padding: 2rem; */
 }
-
+p{
+  font-family: "Harmattan";
+  color: var(--black-80);
+}
+.w-40 {
+  width: 40%;
+}
+.w-50{
+  width: 50%;
+}
 /* navbar */
 .nav-background{
-    background-color: var(--black-70);
-} 
-nav {
+    background-color: var(--black-95);
+    /* background-image: linear-gradient(to bottom,var(--black),var(--black-30)); */
+
+  } 
+header{
+  /* height: 80px; */
   position: fixed;
   top: 0;
-  z-index: 1;
   width: 100%;
+  z-index: 1;
+
+
+}
+
+nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 0.8rem 1.5rem;
 }
 
 /* background img */
@@ -164,6 +190,8 @@ nav ul li a:hover {
   align-items: center;
 }
 .experience .experience-card p{
+  color: var(--white);
+  font-family: 'Cairo';
   font-size: 1.6rem;
   line-height: 140%;
   text-align: center;
@@ -202,10 +230,8 @@ nav ul li a:hover {
 }
 
 .rectangle-section p {
-  font-family: "Rubik";
   font-size: 1.8rem;
   line-height: 140%;
-  color: var(--black-80);
 }
 .rectangle-section h2{
   padding: 2rem 0;
@@ -221,8 +247,8 @@ nav ul li a:hover {
 }
 .left-rectangle img {
   left: 10%;
-  padding: 0.5rem 0;
-}
+  padding-top: 0.7rem;
+  padding-bottom: 0.5rem;}
 .right-rectangle img {
   right: 5%;
   padding-top: 0.7rem;
@@ -233,17 +259,19 @@ nav ul li a:hover {
 .news{
   padding-top: 6rem ;
 }
-.news .rectangle-section .content,
-.rectangle-section-img {
+.news .rectangle-section .content{
   width: 40%;
   /* font-size: 2.2rem; */
+}
+.rectangle-section-img {
+  width: 35%;
 }
 
 .news .rectangle-section-img img {
   width: 100%;
-  left: 5%;
-  top: 1.4rem;
-  padding: 0;
+  /* left: 10%; */
+  /* top: 3rem; */
+  /* padding: 0; */
 }
 /* slider */
 .slider {
@@ -252,11 +280,9 @@ nav ul li a:hover {
   margin: auto;
 }
 .slider h2 ,.news h2{
-  padding-bottom :4rem ;
+  padding-bottom :2rem ;
 }
-.news h2{
-  padding-bottom :2rem;
-}
+
 .news .btn{
   margin-top :3rem;
 }
@@ -283,7 +309,7 @@ nav ul li a:hover {
 }
 .slides img {
   position: relative;
-  animation: move 5s infinite;
+  animation: move 10s infinite;
   animation-timing-function: linear;
   width: 300px;
   height: 100px;
@@ -319,7 +345,6 @@ nav ul li a:hover {
 .info {
   width: 30%;
   color: var(--black);
-  font-size: 1.2rem;
   align-items: center;
   /* margin: 2rem; */
 }
@@ -328,14 +353,15 @@ nav ul li a:hover {
 }
 .map iframe{
   width:100%;
-  height:600px;
+  height:500px;
 }
 .info #mobile,
 .info #address {
   margin: 2rem;
+  margin-right: 0;
   background-color: var(--green-25);
   /* padding: 3rem 1rem; */
-  height: 300px;
+  height: calc(250px - 1rem);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -343,42 +369,52 @@ nav ul li a:hover {
 }
 .info #mobile ul{
   direction: ltr;
-  list-style-type: none;
-
+  /* list-style-image: url('../imgages/phone.svg'); */
+  list-style: none;
+  font-size: 1.2rem;
 }
 
 .info #address ul{
   padding: 0 1.5rem;
   text-align: right;
-  /* list-style-type: square; */
+  list-style-type: none;
+  font-size: 1.2rem;
 
 }
 .info i {
-  font-size: 3.5rem;
+  font-size: 1.5rem;
+  color: var(--orange);
+  margin:0 .3rem;
+}
+.info h3{
   color: var(--orange);
 }
 .contact-us{
   padding-bottom: 6rem;
 }
+.contact-us form{
+  width: 80%;
+  margin: 0 auto;
+}
 .contact-us input,
 .contact-us textarea {
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 1rem;
   border: none;
-  margin-bottom: 2rem;
-  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
   outline: none;
   background-color: rgba(0, 84, 25, 10%);
   color: rgba(34, 34, 34, 80%);
-  /* opacity: 10%; */
 }
 
 .contact .contact-us .form-group {
   display: flex;
+  justify-content: center;
 }
 
 .contact .contact-us .form-group input[type="text"] {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .btn {
@@ -387,7 +423,7 @@ nav ul li a:hover {
   color: var(--white);
   border: none;
   font-family: "Cairo";
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 0.5rem 5rem;
 }
 .btn-submit {
@@ -399,17 +435,20 @@ nav ul li a:hover {
 .lawyers {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   padding-top: 5rem;
-}
-.w-40 {
-  width: 40%;
-}
-.w-50{
-  width: 50%;
+  width: 80%;
+  margin: 0 auto;
+
 }
 
-.partners,.assistants{
+.partners{
   width: 40%;
+
+}
+.assistants{
+  width: 30%;
+  box-shadow: 5px 5px 5px var(--black-15);
 }
 .lawyers img {
   width: 100%;
@@ -417,18 +456,20 @@ nav ul li a:hover {
 
 .lawyers  h2 {
   padding: 1rem 0;
+  padding-right: .5rem;
 }
  .partners  h2 {
-  font-size: 3rem;
+  font-size: 2rem;
 }
  .assistants  h2 {
-  font-size: 2.3rem;
+  font-size: 1.5rem;
 }
 .lawyers h6 {
   color: var(--black-80);
-  font-family: "Rubik";
-  font-size: 2rem;
+  font-size: 1rem;
   line-height: 140%;
+  padding-right: .5rem;
+
 
 }
 
@@ -436,14 +477,14 @@ nav ul li a:hover {
 .about {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: wrap-reverse;
   padding-top: 6rem;
 }
 .about-content{
   width: 60%;
 }
 .about-img{
-  width: 40%;
+  width: 35%;
 }
 .about  h2 {
   color: var(--orange);
@@ -451,9 +492,7 @@ nav ul li a:hover {
 
 }
 .about  p {
-  color: var(--black-80);
   line-height: 140%;
-  font-family: "Rubik";
   font-size: 2rem;
   padding-bottom: 1.5rem;
 }
@@ -598,7 +637,7 @@ li.page-title{
   color: var(--black-80);
   margin: auto;
   padding: 0;
-  border: 1px solid var(--black);
+  border: 1px solid var(--black-15);
   border-radius: 0.3rem;
   width: 500px;
   background-color:white;   
